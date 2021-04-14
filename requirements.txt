@@ -1,0 +1,8 @@
+pygame==2.0.1
+pyglet==1.5.16
+keyboard==0.13.5
+matplotlib==3.2.2
+torch==1.5.1
+numpy==1.19.3
+Pillow==8.2.0
+torch==1.8.1
