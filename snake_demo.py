@@ -3,7 +3,6 @@ import signal
 import sys
 
 import keyboard
-import numpy as np
 import pygame
 import torch
 import torch.nn.functional as F

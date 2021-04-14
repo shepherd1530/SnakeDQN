@@ -65,56 +65,6 @@ def get_head_traveling_path(state):
     return head_target
 
 
-# def get_surrounding_pos(state, board):
-#     def compare(y, x):
-#         return board[y][x] != "." or board[y][x] != "O"
-
-#     values = [0] * 3
-
-#     if not state["snake"]:
-#         new = [0, 0, 1]
-#         # new = [1, 1, 0, 0, 0, 1, 1, 1]
-#         return new
-
-#     head_x, head_y = (
-#         state["snake"][0]["x"],
-#         state["snake"][0]["y"],
-#     )  # dicts are unordered cant unpack
-
-#     path = state["moves"][0]
-
-#     if path == core.NORTH:
-#         if compare(head_y - 1, head_x):
-#             values[0] = 1
-#         if compare(head_y, head_x - 1):
-#             values[1] = 1
-#         if compare(head_y, head_x + 1):
-#             values[2] = 1
-#     elif path == core.EAST:
-#         if compare(head_y, head_x + 1):
-#             values[0] = 1
-#         if compare(head_y - 1, head_x):
-#             values[1] = 1
-#         if compare(head_y + 1, head_x):
-#             values[2] = 1
-#     elif path == core.SOUTH:
-#         if compare(head_y + 1, head_x):
-#             values[0] = 1
-#         if compare(head_y, head_x + 1):
-#             values[1] = 1
-#         if compare(head_y, head_x - 1):
-#             values[2] = 1
-#     elif path == core.WEST:
-#         if compare(head_y, head_x - 1):
-#             values[0] = 1
-#         if compare(head_y + 1, head_x):
-#             values[1] = 1
-#         if compare(head_y - 1, head_x):
-#             values[2] = 1
-
-#     return values
-
-
 def get_surrounding_pos(state, board):
     def compare(y, x):
         return board[y][x] != "." or board[y][x] != "O"
